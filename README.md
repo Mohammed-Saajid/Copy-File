@@ -7,27 +7,25 @@ Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
 
-Load the CSV into a DataFrame.
+Create a text file with some content in it.
 
 ### Step 2: 
 
-Print the number of contents to be displayed using df.head().
+Open the created text file.
  
 ### Step 3: 
 
-The number of rows returned is defined in Pandas option settings.
+Create another empty text file.
 
 ### Step 4:  
 
-Check your system's maximum column with the pd.options.display.max_column statement.
+Copy the content of text file to empty file using write function.
 
 ### Step 5: 
 
-Increase the maximum number of rows to display the entire DataFrame
-
-### Step 6: 
-
 End the program.
+
+
 
 ## PROGRAM:
 
@@ -36,20 +34,20 @@ End the program.
 #Developed by: MOHAMMED SAAJID S
 #Register Number: 212223240093
 
-import pandas as pd
-df = pd.read_csv('nba.csv')
-print(df.head(10))
-print(df.tail())
-print("Number of rows:",len(df.axes[0]))
-print("Number of columns:",len(df.axes[1]))
+with open("text1.txt","r") as fp:
+    msg1=fp.read()
+with open("copytxt","w") as fp1:
+    fp1.write(msg1)
 
 ```
 
 ### OUTPUT:
 
-![exp11](https://github.com/Mohammed-Saajid/Copy-File/assets/141727149/8d2b894e-7b75-4ee1-8489-4307a096f7fb)
 
 
+![pythonexp11ii](https://github.com/Mohammed-Saajid/Copy-File/assets/141727149/44f59c76-7b2f-405a-a9fc-95d5afeab2a2)
+
+![pythonexp11iii](https://github.com/Mohammed-Saajid/Copy-File/assets/141727149/d25ad1e7-5772-4432-ba1f-1a934a8b7aa3)
 
 ## RESULT:
 Thus the program is written to copy the contents from one file to another file.
